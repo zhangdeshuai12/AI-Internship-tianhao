@@ -1,3 +1,0 @@
-1. 路径报错（FileNotFoundError）**：运行代码时提示无法保存图片至 `results/` 目录。通过查阅资料，我在代码开头加入了 `os.makedirs('results', exist_ok=True)`，成功实现了文件夹的自动创建，确保了项目在不同设备上的可移植性。
-2. **中文字体警告（UserWarning: Glyph missing）**：matplotlib 默认字体 Arial 不支持中文显示，导致图表标题中的中文无法正常渲染。虽然不影响图片保存和核心功能，但影响了可视化效果。后续可尝试通过安装中文字体或设置 `plt.rcParams['font.sans-serif'] = ['SimHei']` 来解决。
-3. **标准化对模型的影响**：在 Iris 分类中对特征进行标准化处理，确保 KNN 的距离度量不受量纲影响，逻辑回归能够更快收敛。
