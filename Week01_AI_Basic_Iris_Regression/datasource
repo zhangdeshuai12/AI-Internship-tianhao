@@ -1,0 +1,12 @@
+## 1. Iris 鸢尾花分类数据集
+- **任务类型**：多分类
+- **数据链接**：https://archive.ics.uci.edu/dataset/53/iris
+- **参考示例**：https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+- **加载方式**：`from sklearn.datasets import load_iris`
+- **数据简介**：包含 150 个样本，3 个类别（山鸢尾、杂色鸢尾、维吉尼亚鸢尾），4 个数值特征（萼片长度/宽度、花瓣长度/宽度）。
+
+## 2. California Housing 房价预测数据集
+- **任务类型**：回归
+- **数据链接**：https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_california_housing.html
+- **加载方式**：`from sklearn.datasets import fetch_california_housing`
+- **数据简介**：包含 20,640 个样本，8 个特征（收入中位数、房龄、房间数、卧室数、人口、 occupancy、纬度、经度），目标变量为街区房价中位数（单位：10万美元）。
