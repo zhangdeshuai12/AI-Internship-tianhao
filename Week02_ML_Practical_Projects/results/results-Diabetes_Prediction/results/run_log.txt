@@ -1,0 +1,44 @@
+
+========================================
+糖尿病预测项目运行日志
+生成时间: 2026-07-18 14:56:07.576808
+========================================
+
+[数据信息]
+- 原始样本数: 768
+- 特征数: 8
+- 训练集: 614 条
+- 测试集: 154 条
+
+[缺失值处理]
+- 填充策略: 中位数 (针对 Glucose, BloodPressure, SkinThickness, Insulin, BMI)
+
+[模型评估结果 (测试集)]
+              Model  Accuracy  Precision  Recall     F1    AUC  CV_AUC_Mean
+Logistic Regression    0.7078     0.6000  0.5000 0.5455 0.8130       0.8432
+      Random Forest    0.7792     0.7273  0.5926 0.6531 0.8192       0.8238
+                SVM    0.7403     0.6522  0.5556 0.6000 0.7964       0.8262
+            XGBoost    0.7532     0.6600  0.6111 0.6346 0.8256       0.8194
+
+[最优模型]
+- 名称: XGBoost
+- 测试集 AUC: 0.8256
+
+[生成文件清单]
+- figures/feature_distributions.png
+- figures/correlation_heatmap.png
+- figures/boxplots_by_outcome.png
+- figures/pairplot_matrix.png
+- results/roc_curve.png
+- results/confusion_matrix.png
+- results/feature_importance.png
+- results/probability_distribution.png
+- results/model_comparison.csv
+
+[环境]
+- Python 版本: 2.2.3 (pandas)
+- 依赖库: numpy, matplotlib, seaborn, sklearn, xgboost (已安装)
+
+========================================
+执行完成！
+========================================

@@ -1,0 +1,41 @@
+运行时间: 2026-07-19 15:27:21
+============================================================
+信用卡违约预测项目启动
+数据路径: C:\Users\bpbli/Desktop/default of credit card clients.xlsx
+原始列名: ['Unnamed: 0', 'X1', 'X2', 'X3', 'X4', 'X5', 'X6', 'X7', 'X8', 'X9', 'X10', 'X11', 'X12', 'X13', 'X14', 'X15', 'X16', 'X17', 'X18', 'X19', 'X20', 'X21', 'X22', 'X23', 'Y']
+重命名后列名: ['LIMIT_BAL', 'SEX', 'EDUCATION', 'MARRIAGE', 'AGE', 'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1', 'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6', 'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6', 'Y']
+数据集形状: (30001, 24)
+全局缺失值填充完成，剩余NaN数: 0
+EDA图保存 figures/eda_plots.png
+特征工程后填充了缺失值
+特征工程完成，特征数: 37，NaN数: 0
+SMOTE后训练集大小: 37382
+训练 Logistic Regression ...
+  Logistic Regression AUC: 0.7506
+训练 Decision Tree ...
+  Decision Tree AUC: 0.7243
+训练 Random Forest ...
+  Random Forest AUC: 0.7691
+训练 Gradient Boosting ...
+  Gradient Boosting AUC: 0.7635
+训练 XGBoost ...
+  XGBoost AUC: 0.7527
+训练 KNN ...
+  KNN AUC: 0.6882
+模型对比表已保存 results/model_comparison.csv
+ROC曲线图保存 figures/roc_curve.png
+最佳模型: Random Forest, AUC=0.7691
+特征重要性图保存 figures/feature_importance.png
+混淆矩阵保存 figures/confusion_matrix.png
+预测概率分布保存 figures/prediction_distribution.png
+最优阈值: 0.541, F1=0.5289
+
+最终模型性能（阈值0.5）:
+  准确率: 0.7724
+  精确率: 0.4873
+  召回率: 0.5629
+  F1分数: 0.5224
+  AUC: 0.7691
+报告已生成 report.md
+
+项目运行完成！

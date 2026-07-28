@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1,AUC,CV_AUC_Mean
+Logistic Regression,0.7078,0.6,0.5,0.5455,0.813,0.8432
+Random Forest,0.7792,0.7273,0.5926,0.6531,0.8192,0.8238
+SVM,0.7403,0.6522,0.5556,0.6,0.7964,0.8262
+XGBoost,0.7532,0.66,0.6111,0.6346,0.8256,0.8194
