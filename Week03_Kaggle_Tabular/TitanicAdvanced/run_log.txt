@@ -1,0 +1,23 @@
+============================================================
+Titanic 项目运行日志（优化版）
+============================================================
+训练集样本数: 891, 测试集样本数: 418
+特征数量: 16
+
+模型交叉验证结果:
+                Model  CV_Mean   CV_Std
+ RandomForest (Tuned) 0.836106 0.020132
+      XGBoost (Tuned) 0.833852 0.027166
+             LightGBM 0.841717 0.029316
+Stacking (RF+XGB+LGB) 0.835026 0.018913
+
+提交文件:
+  v1 (Stacking集成): c:\Users\bpbli\Desktop\output_optimized\results\titanic_submission_v1.csv
+  v2 (XGBoost调优): c:\Users\bpbli\Desktop\output_optimized\results\titanic_submission_v2.csv
+
+优化点总结:
+  1. 新增特征: HasCabin, Deck, FamilyGroup, FareLog
+  2. RandomForest 和 XGBoost 超参数调优 (GridSearchCV)
+  3. Stacking 集成 (RF + XGB + LGB → LogisticRegression)
+
+请手动上传至 Kaggle，并截图保存。

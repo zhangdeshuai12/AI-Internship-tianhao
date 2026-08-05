@@ -1,0 +1,6 @@
+Run started: 2026-07-21 10:00:00
+Number of features: 89
+Best params from Optuna: {'model': 'xgb', 'n_estimators': 595, 'max_depth': 3, 'learning_rate': 0.05259817979963129, 'subsample': 0.5928205947627897, 'colsample_bytree': 0.8062416077623531}
+Stacking meta-model: Ridge(alpha=1.0)
+Submission files generated: submission_benchmark.csv, submission_final.csv
+Run finished: 2026-07-21 10:05:00
